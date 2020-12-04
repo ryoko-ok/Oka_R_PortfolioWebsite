@@ -144,8 +144,10 @@ ul {
   font-size: 40px;
   padding: 30px;
 }
-
-.errbutton {
+.err img {
+  width: 100px;
+}
+.err a {
   padding: 10px 20px;
   margin: 40px;
   border: none;
@@ -158,17 +160,17 @@ ul {
   text-decoration: none;
   background: none;
 }
-.errbutton:hover {
+.err a:hover {
   background-color: gray;
   opacity: 60%;
   border: none;
   color: white;
 }
-.errbutton a:link, .errbutton a:visited {
+.err a a:link, .err a a:visited {
   color: gray;
   text-decoration: none;
 }
-.errbutton a:link:hover, .errbutton a:visited:hover {
+.err a a:link:hover, .err a a:visited:hover {
   color: white;
 }
 
