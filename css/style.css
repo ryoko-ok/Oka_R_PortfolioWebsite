@@ -1,0 +1,95 @@
+.hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: "helvetica", sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Dancing script", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 60px;
+  color: white;
+  opacity: 90%;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 35px;
+  margin: 10px;
+  color: #fc7fb2;
+  opacity: 80%;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: gray;
+  opacity: 70%;
+  margin: 10px 0 5px 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 2px;
+  color: gray;
+}
+
+.container {
+  margin: 0 auto;
+  width: 480px;
+  text-align: center;
+  color: gray;
+}
+
+.err {
+  text-align: center;
+  color: gray;
+  background-color: white;
+  padding: 50px;
+  height: 100vh;
+}
+.err h2 {
+  font-size: 40px;
+  padding: 30px;
+}
+
+.errbutton {
+  padding: 10px 20px;
+  margin: 40px;
+  border: none;
+  font-size: 18px;
+  display: inline-block;
+  border: gray 1px solid;
+  border-radius: 10px;
+  color: gray;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+}
+.errbutton:hover {
+  background-color: gray;
+  opacity: 60%;
+  border: none;
+  color: white;
+}
+.errbutton a:link, .errbutton a:visited {
+  color: gray;
+  text-decoration: none;
+}
+.errbutton a:link:hover, .errbutton a:visited:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
