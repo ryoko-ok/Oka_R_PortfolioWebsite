@@ -8,44 +8,47 @@ body {
     background-color: $main-bg-color;
 }
 
-h1 {
-	font-family: 'Dancing script', sans-serif;
-	font-weight: 900;
-	font-size: 40px;
-	line-height: 60px;
-	color: white;
-	opacity: 90%;
+main {
+	padding: 20px;
+}
+
+ul {
+	list-style-type: none;
+	/*padding-top: 22px;*/
+}
+
+#catchcopy {
+	font-size: 70px;
+	font-family: 'Dancing Script', cursive;
+	margin: 100px 40px;
 	text-align: center;
 }
 
-h2 {
-	font-weight: 900;
-	font-size: 35px;
-	margin: 10px;
-	color: #fc7fb2;
-	opacity: 80%;
+#mainContact {
+	max-width: 980px;
+	padding: 20px 20px 0 20px;
+	flex-direction: row;
 }
-
-h3 {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 30px;
-	color: gray;
-	opacity: 70%;
-	margin: 10px 0 5px 0;
-}
-
-p {
-	font-size: 18px;
-	line-height: 30px;
-	margin-bottom: 2px;
-	color: gray;
-}
-
 
 .container {
 	margin: 0 auto;
-	width: 480px;
-	text-align: center;
-	color: gray;
+    width: 1024px;
+    background-color: white;
+    text-align: center;
 }
+
+#title {
+	font-family: 'Dancing Script', cursive, sans-serif;
+	font-size: 80px;
+	color: #656565;
+	margin: 100px 40px;
+    text-align: center;
+}
+
+#discription {
+	font-size: 10px;
+	line-height: 14px;
+	color: #808080;
+	margin-top: 20px;
+}
+
