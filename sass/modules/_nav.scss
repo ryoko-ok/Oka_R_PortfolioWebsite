@@ -1,0 +1,80 @@
+.mainheader {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+}
+
+.logoHeader {
+    float: left;
+    text-align: center;  
+	width: 50px;
+	height: auto;
+	margin: 10px 0px 20px 20px;
+}
+
+#mainNav ul li a {
+	font-size: 20px;
+    margin-top: 10px;
+	padding: 10px;
+}
+
+nav { 
+    margin: 0;
+    float: right;    
+    .nav-item { 
+        margin-top: 10px;
+        margin-right: 20px;
+        height: 60px;
+        font-family:"Dancing Script", sans-serif;
+        display: inline-block; 
+
+        a { 
+            text-decoration: none; 
+            display: block;
+            color: #656565;
+            font-size: 20px;
+            cursor: pointer;
+
+            &.active {
+                color: #FF6666;
+            }
+
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+
+    img {
+        width: 150px;
+    }
+
+    p {
+        font-family: 'Dancing Script';
+        color: #656565;
+        font-size: 14px;
+    }
+
+    a:link {
+        background-color: #656565;
+        color: white;
+        border-radius: 3px;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
+
+}

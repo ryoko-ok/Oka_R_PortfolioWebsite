@@ -1,3 +1,76 @@
+.mainheader {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: fixed;
+  background-color: white;
+}
+
+.logoHeader {
+  float: left;
+  text-align: center;
+  width: 50px;
+  height: auto;
+  margin: 10px 0px 20px 20px;
+}
+
+#mainNav ul li a {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+nav {
+  margin: 0;
+  float: right;
+}
+nav .nav-item {
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 60px;
+  font-family: "Dancing Script", sans-serif;
+  display: inline-block;
+}
+nav .nav-item a {
+  text-decoration: none;
+  display: block;
+  color: #656565;
+  font-size: 20px;
+  cursor: pointer;
+}
+nav .nav-item a.active {
+  color: #FF6666;
+}
+nav .nav-item a:hover {
+  opacity: 50%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+footer img {
+  width: 150px;
+}
+footer p {
+  font-family: "Dancing Script";
+  color: #656565;
+  font-size: 14px;
+}
+footer a:link {
+  background-color: #656565;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+footer a:link:hover {
+  opacity: 50%;
+}
+
 .hidden {
   display: none;
 }
@@ -12,45 +85,52 @@ body {
   background-color: white;
 }
 
-h1 {
-  font-family: "Dancing script", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 60px;
-  color: white;
-  opacity: 90%;
+main {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  /*padding-top: 22px;*/
+}
+
+#catchcopy {
+  font-size: 70px;
+  font-family: "Dancing Script", cursive;
+  margin: 100px 40px;
   text-align: center;
 }
 
-h2 {
-  font-weight: 900;
-  font-size: 35px;
-  margin: 10px;
-  color: #fc7fb2;
-  opacity: 80%;
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: gray;
-  opacity: 70%;
-  margin: 10px 0 5px 0;
-}
-
-p {
-  font-size: 18px;
-  line-height: 30px;
-  margin-bottom: 2px;
-  color: gray;
+#mainContact {
+  max-width: 980px;
+  padding: 20px 20px 0 20px;
+  flex-direction: row;
 }
 
 .container {
   margin: 0 auto;
-  width: 480px;
+  width: 1024px;
+  background-color: white;
   text-align: center;
-  color: gray;
+}
+
+#title {
+  font-family: "Dancing Script", cursive, sans-serif;
+  font-size: 80px;
+  color: #656565;
+  margin: 100px 40px;
+  text-align: center;
+}
+
+#discription {
+  font-size: 10px;
+  line-height: 14px;
+  color: #808080;
+  margin-top: 20px;
+}
+
+.g-recaptcha {
+  padding-top: 20px;
 }
 
 .err {
