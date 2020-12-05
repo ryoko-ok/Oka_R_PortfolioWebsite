@@ -5,11 +5,15 @@
 
 body {
     font: $main-font;
-    background-color: $main-bg-color;
+	background-color: $main-bg-color;
+	color: $main-text-color;
+
 }
 
 main {
 	padding: 20px;
+	font-family: 'Helvetica', sans-serif;
+	color: #656565;
 }
 
 ul {
@@ -17,10 +21,15 @@ ul {
 	/*padding-top: 22px;*/
 }
 
-#catchcopy {
-	font-size: 70px;
-	font-family: 'Dancing Script', cursive;
-	margin: 100px 40px;
+h2 {
+	font-weight: lighter;
+	padding: 0 0 10px 0;
+}
+
+#pagetitle {
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 40px;
+	margin: 60px 20px 20px 20px;
 	text-align: center;
 }
 
@@ -31,7 +40,7 @@ ul {
 
 
 #title {
-	font-family: 'Dancing Script', cursive, sans-serif;
+	font-family: 'Dancing Script', sans-serif;
 	font-size: 80px;
 	color: #656565;
 	margin: 100px 40px;
