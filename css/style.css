@@ -101,16 +101,8 @@ ul {
   text-align: center;
 }
 
-#mainContact {
-  max-width: 980px;
-  padding: 20px 20px 0 20px;
-  flex-direction: row;
-}
-
-.container {
-  margin: 0 auto;
-  width: 1024px;
-  background-color: white;
+#mainCon {
+  width: 80%;
   text-align: center;
 }
 
@@ -127,6 +119,13 @@ ul {
   line-height: 14px;
   color: #808080;
   margin-top: 20px;
+}
+
+.introvideo {
+  width: 100%;
+}
+.introvideo .mainvideo {
+  width: 100%;
 }
 
 .g-recaptcha {

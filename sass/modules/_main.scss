@@ -24,18 +24,11 @@ ul {
 	text-align: center;
 }
 
-#mainContact {
-	max-width: 980px;
-	padding: 20px 20px 0 20px;
-	flex-direction: row;
+#mainCon {
+	width: 80%;
+	text-align: center;
 }
 
-.container {
-	margin: 0 auto;
-    width: 1024px;
-    background-color: white;
-    text-align: center;
-}
 
 #title {
 	font-family: 'Dancing Script', cursive, sans-serif;
@@ -52,3 +45,11 @@ ul {
 	margin-top: 20px;
 }
 
+
+.introvideo {
+	width: 100%;
+
+	.mainvideo {
+		width: 100%;
+	}
+}
