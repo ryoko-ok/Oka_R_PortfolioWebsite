@@ -49,6 +49,20 @@
         margin-right: auto;
         width: 60%;
     }
+
+    footer {
+         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        align-items: center;
+    
+        p {
+            font-family: 'Dancing Script';
+            color: #656565;
+            font-size: 14px;
+        }
+    }
 }
 
 @media (min-width: 1024px) {
