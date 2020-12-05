@@ -1,3 +1,30 @@
 footer {
     font-family: 'Helvetica', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+
+    img {
+        width: 150px;
+    }
+
+    p {
+        font-family: 'Dancing Script';
+        color: #656565;
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    a:link {
+        background-color: #B3B2B2;
+        color: white;
+        border-radius: 3px;
+        padding: 5px 10px;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 50%;
+        }
+    }
 }

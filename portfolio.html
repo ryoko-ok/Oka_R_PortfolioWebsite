@@ -11,8 +11,8 @@
 
     <!-- header -->
     <header>
-        <h1 class="hidden">welcome to Ryoko's Website</h1>
-
+        <h1 class="hidden">Portfolio Page</h1>
+    
         <div class="mainheader">
         <!-- Logo img -->
             <div class="logoHeader"><img src="images/logo_circle.svg" alt="Header logo"></div>
@@ -31,10 +31,33 @@
 
 
     <main>
-        <h2 id="title">Ryoko Oka</h2>
 
+        <div>
+            <h2 id="pagetitle">Portfolio</h2>
+        </div>
 
-    </section>
+        <div class="carmodelCon">
+        
+            <!-- show the model data in 'collection' array -->
+            <div>
+                <h2 @click="clickHeader">{{ message }}</h2><!-- linked with main.js data -->
+                <p>{{ anotherMessage }}</p>    
+                <ul class="carmodels">
+                    <li v-for= "model in newmodels"> <!-- this 'collection' means main.js 'data'-'collection' -->
+                        <img :src="'images/' + model.pic" :alt='model.name + " image"' @click.prevent="removeModel(model)"> <!-- :href="" -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+            <!-- show more section -->
+        <div class="carinfo">
+        <section class="bio-data" :class="{'show-bio' : showBioData}">
+            <h3>{{ currentModelData.name }}</h3>
+            <p> {{ currentModelData.price }}</p>
+            <p> {{ currentModelData.info }}</p>
+        </section>
+        </div>
 
     </main>
 
@@ -48,7 +71,6 @@
     </footer>
     
 
-
-    <script type="module" src="js/main.js"></script>
+    <script defer type="module" src="js/main.js"></script>
 </body>
 </html>

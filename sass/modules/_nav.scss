@@ -47,34 +47,3 @@ nav {
         }
     }
 }
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-
-    img {
-        width: 150px;
-    }
-
-    p {
-        font-family: 'Dancing Script';
-        color: #656565;
-        font-size: 14px;
-    }
-
-    a:link {
-        background-color: #656565;
-        color: white;
-        border-radius: 3px;
-        padding: 5px 10px;
-        text-decoration: none;
-
-        &:hover {
-            opacity: 50%;
-        }
-    }
-
-}
