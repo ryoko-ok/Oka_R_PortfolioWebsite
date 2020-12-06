@@ -9,39 +9,45 @@
     <link rel="stylesheet" href="https://fonts.google.com/?query=dancing">
 
 </head>
-<body>
 
+<!-- header -->
+<header>
+    <h1 class="hidden">Home</h1>
 
-    <!-- header -->
-    <header>
+    <div class="mainheader">
+    <!-- Logo img -->
+        <div class="logoHeader"><img src="images/logo_circle.svg" alt="Header logo"></div>
+
+        <!-- navigation bar-->
+        <nav id="mainNav">
+            <h2 class="hidden">Main Navigation</h2>
+            <ul>
+                <li class="nav-item"><a class="active" href="index.html">Home</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
         <h1 class="hidden">welcome to Ryoko's Website</h1>
-
-        <div class="mainheader">
-        <!-- Logo img -->
-            <div class="logoHeader"><img src="images/logo_circle.svg" alt="Header logo"></div>
-
-            <!-- navigation bar-->
-            <nav id="mainNav">
-                <h2 class="hidden">Main Navigation</h2>
-                <ul>
-                    <li class="nav-item"><a class="active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+        <img src="images/logo_long_name.svg" alt="Name Logo">
+        <div class="introduction">
+            <p>I'm a graphic and UI/UX designer! I'm from Japan and currentry living in Ontario, Canada. Please visit my "Portfolio" page and see my work! First, click demo-reel button! You can see short version of my demo reel!</p></div>
+            
+        <a href="#DemoReel"><button type="button" class="readbutton">Watch Short Demo Reel!</button></a>
         </div>
-    </header>
+    </div>
 
-
-    <main>
+        <a name="DemoReel"></a>
         <!-- main container -->
-        <div class="mainCon">
-            <h2 id="title">Ryko oka</h2>
+        <div class="mainCon"></div>
+
             <div class="introvideo">
                 <video class="mainvideo" src="video/demoreel_short.mp4" controls muted autoplay loop></video>
             </div>
-        </div>
-
 
     </main>
 

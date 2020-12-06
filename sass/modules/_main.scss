@@ -26,6 +26,51 @@ h2 {
 	padding: 0 0 10px 0;
 }
 
+.container {
+	margin: 0 auto;
+	height: 100vh;
+	text-align: center;
+	align-items: center;
+	color: #656565;
+
+	img {
+		width: 50%;
+		padding: 80px 0 50px 0;
+	}
+
+	p {
+		line-height: 1.4rem;
+	}
+}
+
+
+//  opening page ---------------------------
+
+.readbutton {
+    padding: 10px 20px;
+    margin: 40px;
+    border: none;
+    font-size: 16px;
+    display: inline-block; 
+    border: #656565 1px solid;
+    border-radius: 10px;
+    color: #656565;
+    cursor: pointer; 
+    text-decoration: none;
+    background: none;
+
+    &:hover { 
+        border: #FF6666 2px solid;
+        color: #FF6666;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+      }
+}
+
+// main page ------------------------------
+
 #pagetitle {
 	font-family: 'Dancing Script', sans-serif;
 	font-size: 40px;
@@ -34,17 +79,30 @@ h2 {
 }
 
 #mainCon {
-	width: 80%;
+	height: 100vh;
 	text-align: center;
 }
 
+.introduction {
+	width: 70%;
+	line-height: 1rem;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-#title {
+
+.nametitle {
 	font-family: 'Dancing Script', sans-serif;
 	font-size: 80px;
 	color: #656565;
-	margin: 100px 40px;
-    text-align: center;
+	margin: 50px 40px;
+	text-align: center;
+	
+	img {
+		width: 30%;
+		padding-top: 80px;
+	}
 }
 
 #discription {
@@ -56,11 +114,58 @@ h2 {
 
 
 .introvideo {
-	width: 80%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 
 	.mainvideo {
 		width: 100%;
 	}
+}
+
+// ------ portfolio -----------------
+.portfolioCon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+	text-align: center;
+}
+
+.portfolioInside {
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.lightbox {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    background-color: #B3B2B2;
+    padding: 40px;
+
+    span {
+        cursor: pointer;
+    }
+}
+
+.show-lightbox {
+    display: block;
+}
+
+.button-wrapper {
+    display: inline-block;
+    margin: 0 12px;
+    cursor: pointer;
+
+    img { 
+        width: 150px; max-width: 100%; 
+    }
+}
+
+.collectionsCon {
+    width: 100%;
+    padding: 20px 30px;
+    background-color: pink;
 }
