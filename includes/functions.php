@@ -6,7 +6,7 @@
 
     function getAllUsers($conn)
     {
-        $query = "SELECT * FROM models";
+        $query = "SELECT * FROM collections";
 
         $runQuery = $conn->query($query);
 
@@ -20,7 +20,7 @@
 
     function getSingleUser($conn, $id)
     {
-        $query = "SELECT * FROM models WHERE id=" . $id . "";
+        $query = "SELECT * FROM collections WHERE id=" . $id . "";
 
         $runQuery = $conn->query($query);
 

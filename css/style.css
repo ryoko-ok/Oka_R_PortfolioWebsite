@@ -1,7 +1,6 @@
 .mainheader {
   width: 100%;
   height: auto;
-  overflow: hidden;
   position: fixed;
   background-color: white;
 }
@@ -76,6 +75,42 @@ h2 {
   padding: 0 0 10px 0;
 }
 
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  color: #656565;
+}
+.container img {
+  width: 50%;
+  padding: 80px 0 50px 0;
+}
+.container p {
+  line-height: 1.4rem;
+}
+
+.readbutton {
+  padding: 10px 20px;
+  margin: 40px;
+  border: none;
+  font-size: 16px;
+  display: inline-block;
+  border: #656565 1px solid;
+  border-radius: 10px;
+  color: #656565;
+  cursor: pointer;
+  text-decoration: none;
+  background: none;
+}
+.readbutton:hover {
+  border: #FF6666 2px solid;
+  color: #FF6666;
+}
+.readbutton a:link, .readbutton a:visited {
+  text-decoration: none;
+}
+
 #pagetitle {
   font-family: "Dancing Script", sans-serif;
   font-size: 40px;
@@ -84,16 +119,28 @@ h2 {
 }
 
 #mainCon {
-  width: 80%;
+  height: 100vh;
   text-align: center;
 }
 
-#title {
+.introduction {
+  width: 70%;
+  line-height: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nametitle {
   font-family: "Dancing Script", sans-serif;
   font-size: 80px;
   color: #656565;
-  margin: 100px 40px;
+  margin: 50px 40px;
   text-align: center;
+}
+.nametitle img {
+  width: 30%;
+  padding-top: 80px;
 }
 
 #discription {
@@ -104,10 +151,64 @@ h2 {
 }
 
 .introvideo {
-  width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .introvideo .mainvideo {
   width: 100%;
+}
+
+.portfolioInside {
+  width: 100%;
+  background-color: lightcoral;
+}
+
+.lightbox {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 90%;
+  background-color: #B3B2B2;
+  padding: 40px;
+}
+.lightbox span {
+  padding: 5px 10px;
+  border: #656565 1px solid;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.lightbox video {
+  width: 80%;
+}
+.lightbox h1 {
+  font-family: "Dancing Script", sans-serif;
+}
+.lightbox img {
+  height: 30%;
+  width: auto;
+}
+
+.show-lightbox {
+  display: block;
+}
+
+.button-wrapper {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 12px;
+  cursor: pointer;
+}
+.button-wrapper img {
+  width: 30%;
+  max-width: 100%;
+}
+
+.video-player h2 {
+  font-family: "Dancing Script", sans-serif;
 }
 
 label {
@@ -290,6 +391,19 @@ footer a:link:hover {
     font-family: "Dancing Script";
     color: #656565;
     font-size: 14px;
+  }
+  footer .portfolioCon {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .container img {
+    width: 50%;
+    padding: 100px 0 50px 0;
+  }
+  .container p {
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 1024px) {

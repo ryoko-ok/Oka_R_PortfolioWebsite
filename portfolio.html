@@ -6,6 +6,7 @@
     <title>Ryoko Oka Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.google.com/?query=dancing">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 </head>
 
@@ -30,37 +31,20 @@
     </header>
 
 
-    <main>
+    <main id="app">
 
         <div>
-            <h2 id="pagetitle">Portfolio</h2>
+        <h1 id="pagetitle">Portfolio</h1>
         </div>
-
-        <div class="carmodelCon">
-        
-            <!-- show the model data in 'collection' array -->
-            <div>
-                <h2 @click="clickHeader">{{ message }}</h2><!-- linked with main.js data -->
-                <p>{{ anotherMessage }}</p>    
-                <ul class="carmodels">
-                    <li v-for= "model in newmodels"> <!-- this 'collection' means main.js 'data'-'collection' -->
-                        <img :src="'images/' + model.pic" :alt='model.name + " image"' @click.prevent="removeModel(model)"> <!-- :href="" -->
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-            <!-- show more section -->
-        <div class="carinfo">
-        <section class="bio-data" :class="{'show-bio' : showBioData}">
-            <h3>{{ currentModelData.name }}</h3>
-            <p> {{ currentModelData.price }}</p>
-            <p> {{ currentModelData.info }}</p>
-        </section>
-        </div>
-
+               
+        <buttoncomponent v-for="item in mediaCollections" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
+        <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
     </main>
-
+        
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src='js/main.js' type='module'></script>
+    </body>
+        
     <!-- footer -->
     <footer class="mainfooter">
         <!-- Logo img -->
@@ -70,7 +54,6 @@
 
     </footer>
     
-
-    <script defer type="module" src="js/main.js"></script>
+    <script type="module" src="js/portfolio.js"></script>
 </body>
 </html>

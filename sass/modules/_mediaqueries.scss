@@ -1,9 +1,4 @@
 @media (min-width: 768px) {
-    // .fav-section {
-    //     display: flex;
-    //     text-align: center;
-    //     flex-direction: row;
-    // }
 
     h1 {
         font-size: 30px;
@@ -62,13 +57,27 @@
             color: #656565;
             font-size: 14px;
         }
+
+        .portfolioCon {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+        }
+    }
+
+    .container {    
+        img {
+            width: 50%;
+            padding: 100px 0 50px 0;
+        }
+    
+        p {
+            line-height: 1.5rem;
+        }
     }
 }
 
 @media (min-width: 1024px) {
-    // .fav-section {
-    //     flex-wrap: wrap;
-    //     }
 
     h1 {
         font-size: 40px;
