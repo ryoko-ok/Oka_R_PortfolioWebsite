@@ -14,9 +14,9 @@
 }
 
 #mainNav ul li a {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 10px;
-  padding: 10px;
+  padding: 0 5px;
 }
 
 nav {
@@ -92,20 +92,22 @@ h2 {
 
 .readbutton {
   padding: 10px 20px;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 10px;
   border: none;
   font-size: 16px;
   display: inline-block;
-  border: #656565 1px solid;
+  border: #FF6666 1px solid;
   border-radius: 10px;
-  color: #656565;
+  color: #FF6666;
   cursor: pointer;
   text-decoration: none;
   background: none;
 }
 .readbutton:hover {
-  border: #FF6666 2px solid;
-  color: #FF6666;
+  background-color: #B3B2B2;
+  border: none;
+  color: white;
 }
 .readbutton a:link, .readbutton a:visited {
   text-decoration: none;
@@ -159,22 +161,28 @@ h2 {
   width: 100%;
 }
 
-.portfolioInside {
+.gallary {
   width: 100%;
-  background-color: lightcoral;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
 }
 
 .lightbox {
-  display: none;
-  position: absolute;
-  top: 0;
-  bottom: 0;
   width: 90%;
+  height: 90%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
   background-color: #B3B2B2;
   padding: 40px;
 }
 .lightbox span {
   padding: 5px 10px;
+  margin: 10px 0;
   border: #656565 1px solid;
   border-radius: 5px;
   font-weight: bold;
@@ -185,10 +193,14 @@ h2 {
 }
 .lightbox h1 {
   font-family: "Dancing Script", sans-serif;
+  padding: 5px 0;
 }
 .lightbox img {
-  height: 30%;
-  width: auto;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 700px;
 }
 
 .show-lightbox {
@@ -196,18 +208,24 @@ h2 {
 }
 
 .button-wrapper {
-  width: 100%;
   display: inline-block;
-  vertical-align: middle;
   margin: 20px 12px;
+  text-align: center;
   cursor: pointer;
 }
 .button-wrapper img {
-  width: 30%;
+  width: 150px;
   max-width: 100%;
+}
+.button-wrapper h4 {
+  font-family: "Dancing Script", sans-serif;
 }
 
 .video-player h2 {
+  font-family: "Dancing Script", sans-serif;
+}
+
+.web-player h2 {
   font-family: "Dancing Script", sans-serif;
 }
 
@@ -283,14 +301,17 @@ footer p {
   font-size: 12px;
   padding: 20px;
 }
-footer a:link {
+footer a {
   background-color: #B3B2B2;
   color: white;
   border-radius: 3px;
   padding: 5px 10px;
   text-decoration: none;
 }
-footer a:link:hover {
+footer a:visited {
+  text-decoration: none;
+}
+footer a:hover {
   opacity: 50%;
 }
 
@@ -351,6 +372,12 @@ footer a:link:hover {
     font-size: 20px;
   }
 
+  #mainNav ul li a {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
   #pagetitle {
     font-size: 50px;
     margin: 80px 20px 20px 20px;
@@ -359,11 +386,6 @@ footer a:link:hover {
 
   .container {
     width: 600px;
-  }
-
-  p {
-    font-size: 20px;
-    line-height: 25px;
   }
 
   input[type=text], input[type=email], select[name=topic], textarea {
@@ -392,18 +414,36 @@ footer a:link:hover {
     color: #656565;
     font-size: 14px;
   }
-  footer .portfolioCon {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-  }
 
   .container img {
     width: 50%;
     padding: 100px 0 50px 0;
   }
   .container p {
-    line-height: 1.5rem;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .button-wrapper {
+    display: inline-block;
+    margin: 20px 12px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .button-wrapper img {
+    width: 300px;
+    max-width: 100%;
+  }
+  .button-wrapper h4 {
+    font-size: 18px;
+  }
+
+  .lightbox img {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+    max-width: 1000px;
   }
 }
 @media (min-width: 1024px) {
@@ -414,11 +454,6 @@ footer a:link:hover {
 
   h2 {
     font-size: 30px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 20px;
   }
 }
 

@@ -77,7 +77,7 @@ $results['message'] = $visitor_message;
 
 // 2. Prepare the email
 $email_subject = $topic_lookup[$_POST['topic']];
-$email_recipient = 'test@ryoko-o.com'; // Your Email, or AKA, "To" email
+$email_recipient = 'main@ryoko-o.com'; // Your Email, or AKA, "To" email
 $email_message = sprintf('FirstName: %s, LastName: %s, Email: %s, Topic: %s, Message: %s', $visitor_firstname, $visitor_lastname, $visitor_email, $topic_lookup, $visitor_message);
 
 // Make sure you run the code in PHP 7.4 +

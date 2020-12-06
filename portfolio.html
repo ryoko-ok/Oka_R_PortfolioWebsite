@@ -36,9 +36,11 @@
         <div>
         <h1 id="pagetitle">Portfolio</h1>
         </div>
-               
-        <buttoncomponent v-for="item in mediaCollections" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
-        <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
+
+        <div class="gallary">     
+            <buttoncomponent v-for="item in mediaCollections" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
+            <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
+        </div>
     </main>
         
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
