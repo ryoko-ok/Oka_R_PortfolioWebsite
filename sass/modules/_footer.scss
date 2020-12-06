@@ -16,12 +16,16 @@ footer {
         padding: 20px;
     }
 
-    a:link {
+    a {
         background-color: #B3B2B2;
         color: white;
         border-radius: 3px;
         padding: 5px 10px;
         text-decoration: none;
+
+        &:visited {
+            text-decoration: none;
+        }
 
         &:hover {
             opacity: 50%;

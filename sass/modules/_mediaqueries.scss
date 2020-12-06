@@ -15,6 +15,13 @@
         font-size: 20px;
     }
 
+    #mainNav ul li a {
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+
     #pagetitle {
         font-size: 50px;
         margin: 80px 20px 20px 20px;
@@ -25,10 +32,6 @@
         width: 600px;
     }    
 
-    p {
-        font-size: 20px;
-        line-height: 25px;
-    }
 
     input[type=text], input[type=email], select[name=topic], textarea {
 	
@@ -58,11 +61,6 @@
             font-size: 14px;
         }
 
-        .portfolioCon {
-            display: flex;
-            flex-direction: row;
-            text-align: center;
-        }
     }
 
     .container {    
@@ -70,12 +68,39 @@
             width: 50%;
             padding: 100px 0 50px 0;
         }
-    
+
         p {
-            line-height: 1.5rem;
+            font-size: 18px;
+            line-height: 25px;
         }
     }
+
+    .button-wrapper {
+        display: inline-block;
+        margin: 20px 12px;
+        text-align: center;
+        cursor: pointer;
     
+        img { 
+            width: 300px; max-width: 100%; 
+        }
+        
+        h4 {
+            font-size: 18px;
+        }
+    }
+
+    .lightbox {
+    
+        img {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            width: 70%;
+            max-width: 1000px;	
+        }
+
+    }
 }
 
 @media (min-width: 1024px) {
@@ -89,9 +114,5 @@
         font-size: 30px;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 20px;
-    }
 
 }

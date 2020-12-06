@@ -48,20 +48,22 @@ h2 {
 
 .readbutton {
     padding: 10px 20px;
-    margin: 40px;
+	margin-top: 40px;
+	margin-bottom: 10px;
     border: none;
     font-size: 16px;
     display: inline-block; 
-    border: #656565 1px solid;
+    border: #FF6666 1px solid;
     border-radius: 10px;
-    color: #656565;
+    color: #FF6666;
     cursor: pointer; 
     text-decoration: none;
     background: none;
 
     &:hover { 
-        border: #FF6666 2px solid;
-        color: #FF6666;
+		background-color: #B3B2B2;
+		border: none;
+        color: white;
     }
 
     a:link, a:visited {
@@ -123,24 +125,30 @@ h2 {
 	}
 }
 
-// ------ portfolio -----------------
+//  portfolio (lightbox) --------------------
 
-.portfolioInside {
-    width: 100%;
-    background-color: lightcoral;
+.gallary {
+	width: 100%;
+	margin: 0;
+	padding: 30px;
+	text-align: center;
 }
 
 .lightbox {
-    display: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 90%;
+	width: 90%;
+	height: 90%;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
     background-color: #B3B2B2;
-    padding: 40px;
+	padding: 40px;
 
     span {
 		padding: 5px 10px;
+		margin: 10px 0;
 		border: #656565 1px solid;
 		border-radius: 5px;
 		font-weight: bold;
@@ -153,11 +161,15 @@ h2 {
 
 	h1 {
 		font-family: 'Dancing Script', sans-serif;
+		padding: 5px 0;
 	}
 
 	img {
-		height: 30%;
-		width: au;
+		position: relative;
+		margin: auto;
+		padding: 0;
+		width: 90%;
+		max-width: 700px;	
 	}
 }
 
@@ -166,22 +178,31 @@ h2 {
 }
 
 .button-wrapper {
-	width: 100%;
 	display: inline-block;
-	vertical-align: middle;
-    margin: 20px 12px;
-    cursor: pointer;
+	margin: 20px 12px;
+	text-align: center;
+	cursor: pointer;
 
     img { 
-        width: 30%; max-width: 100%; 
-    }
+        width: 150px; max-width: 100%; 
+	}
+	
+	h4 {
+		font-family: 'Dancing Script', sans-serif;
+	}
 }
-
 
 .video-player {
 	h2 {
 		font-family: 'Dancing Script', sans-serif;
 	}
+}
+
+.web-player {
+	h2 {
+		font-family: 'Dancing Script', sans-serif;
+	}
+
 }
 
 
