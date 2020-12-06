@@ -37,10 +37,8 @@
         <h1 id="pagetitle">Portfolio</h1>
         </div>
                
-        <section class="portfolioCon">
         <buttoncomponent v-for="item in mediaCollections" :item="item" :key="item.id" @setmediatype="setComponent"></buttoncomponent>
         <lightbox :item="currentItem" :mediatype="mediaType"></lightbox>
-        </section>
     </main>
         
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

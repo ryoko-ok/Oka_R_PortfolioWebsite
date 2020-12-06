@@ -8,7 +8,7 @@ export default {
             <img class="lb-thumb" :src="'images/' + item.thumb" alt="portfolio thumbnail">
             <h4 class="lb-thumb-title">{{item.title}}</h4>
         </div>
-    `,
+`,
 
     methods: {
         loadMediaComponent(event) {

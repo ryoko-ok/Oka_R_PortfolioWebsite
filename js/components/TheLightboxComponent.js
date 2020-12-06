@@ -8,7 +8,7 @@ export default {
     template: `
     <section class="lightbox">
         <span class="lb-close" @click="closelb">X</span>
-        <h2>Type of Work: {{mediatype}}</h2>
+        <h1 class="hidden"> {{mediatype}}</h1>
         <!-- web,video or graphic component (mediatype) gets rendered here -->
         <component :is="currentComponent" :work="item"></component>
     </section>
